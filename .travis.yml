@@ -1,0 +1,33 @@
+language: python
+
+python:
+- '3.6.2'
+
+branches:
+  only: $TRAVIS_BRANCH
+
+install:
+- sudo apt-get install python3
+- sudo pip install awscli
+
+deploy:
+  provider: script
+  script: aws apigateway import-rest-api --parameters endpointConfigurationTypes=EDGE --body '/swagger-test-api.json'
+  on:
+    branch: $TRAVIS_BRANCH
+
+notifications:
+  email:
+    recipients:
+      - one@example.com
+      - other@example.com
+
+    # change is when the repo status goes from pass to fail or vice versa
+    on_success: change
+    on_failure: always
+    
+env:
+  global:
+  - AWS_DEFAULT_REGION=us-east-1
+  - secure: <obfuscated AWS Access Key>
+  - secure: <obfuscated AWS Secret Key>

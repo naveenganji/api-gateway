@@ -1,4 +1,5 @@
 # omsproxy-swagger
+
 Swagger definition for OMS Proxy
 
 The following placeholders have to be replaced before this swagger definition can be imported into API Gateway:

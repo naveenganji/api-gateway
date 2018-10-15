@@ -1,7 +1,7 @@
-pipeline {
-	agent any
+node {
+	//agent any
 	
-	stages {
+	//stages {
 		stage('stage1') {
         /* Let's make sure we have the repository cloned to our workspace */
         //checkout scm
@@ -20,4 +20,4 @@ pipeline {
 			//}
 		}
     }
-}
+//}

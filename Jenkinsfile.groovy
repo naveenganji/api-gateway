@@ -5,6 +5,7 @@ node {
 		stage('stage1') {
         /* Let's make sure we have the repository cloned to our workspace */
         //checkout scm
+			sh "echo $WORKSPACE"
         }
              
         stage("stage2") {

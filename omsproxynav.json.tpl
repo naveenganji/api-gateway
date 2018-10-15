@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "version": "2018-08-11T05:24:15Z",
-    "title": "omsproxy-QA"
+    "title": "omsproxy-DEV"
   },
   "host": "*.execute-api.us-east-1.amazonaws.com",
   "basePath": "/",

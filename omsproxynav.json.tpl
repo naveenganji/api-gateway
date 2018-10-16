@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "2018-10-16T05:24:15Z",
+    "version": "2018-11-16T05:24:15Z",
     "title": "omsproxy-DEV"
   },
   "host": "*.execute-api.us-east-1.amazonaws.com",

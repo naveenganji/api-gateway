@@ -3,7 +3,7 @@ node {
     stage('Clone repository') {
         // Let's make sure we have the repository cloned to our workspace
             
-                checkout([$class: 'GitSCM', branches: [[name: '*/DEV']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'git', url: 'https://github.com/naveenganji/api-gateway.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/stage']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'git', url: 'https://github.com/naveenganji/api-gateway.git']]])
     
 		}
 		
